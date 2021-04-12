@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:\Users\JuanD\OneDrive\Escritorio\JuanDavid\Kicad\Industrial\Industrial.sch)
-    (date "11/04/2021 18:04:27")
+    (date "11/04/2021 18:45:35")
     (tool "Eeschema (5.1.9)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
