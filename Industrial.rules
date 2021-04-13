@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 12)
+    (start_pass_no 16)
     (layer_rule F.Cu
       (active off)
       (preferred_direction horizontal)
@@ -151,14 +151,15 @@
     )
   )
   (class señal
-    /Battery GND "Net-(D1-Pad1)" /A0 /Vcc /SCL /SDA "Net-(J2-Pad5)"
-    "Net-(J2-Pad6)" /SCR "Net-(R1-Pad1)" "Net-(R2-Pad1)" "Net-(R3-Pad1)" /5v /ZeroCross "Net-(R5-Pad1)"
-    /Shoot "Net-(R6-Pad2)" "Net-(S1-Pad9)" "Net-(S1-Pad10)" "Net-(S1-Pad11)" /TrueZero "Net-(S1-Pad12)" "Net-(S1-Pad13)"
-    "Net-(S1-Pad6)" "Net-(S1-Pad14)" "Net-(S1-Pad7)" "Net-(S1-Pad15)" "Net-(U1-Pad3)" "Net-(U2-Pad3)" "Net-(U2-Pad5)" "Net-(U3-Pad2)"
-    "Net-(U3-Pad3)" "Net-(U3-Pad4)" "Net-(U3-Pad5)" "Net-(U3-Pad6)" "Net-(U3-Pad7)" "Net-(U3-Pad8)" "Net-(U3-Pad9)" "Net-(U3-Pad10)"
-    "Net-(U3-Pad11)" "Net-(U3-Pad12)" "Net-(U3-Pad13)" "Net-(U3-Pad14)" "Net-(U3-Pad15)" "Net-(U3-Pad16)" "Net-(U3-Pad17)" "Net-(U3-Pad18)"
-    "Net-(U3-Pad20)" "Net-(U3-Pad21)" "Net-(U3-Pad22)" "Net-(U3-Pad25)" "Net-(U3-Pad27)" "Net-(U3-Pad28)" "Net-(U3-Pad29)" "Net-(U3-Pad30)"
-    "Net-(U3-Pad31)" "Net-(U3-Pad34)" "Net-(U3-Pad35)" "Net-(U3-Pad37)" "Net-(S1-Pad1)" "Net-(S1-Pad2)" "Net-(J4-Pad1)"
+    /Battery GND /A0 /Vcc /SCL /SDA "Net-(J2-Pad5)" "Net-(J2-Pad6)"
+    /SCR "Net-(R1-Pad1)" "Net-(R2-Pad1)" "Net-(R3-Pad1)" /5v /ZeroCross "Net-(R5-Pad1)" /Shoot
+    "Net-(R6-Pad2)" "Net-(S1-Pad9)" "Net-(S1-Pad10)" "Net-(S1-Pad11)" /TrueZero "Net-(S1-Pad12)" "Net-(S1-Pad13)" "Net-(S1-Pad6)"
+    "Net-(S1-Pad14)" "Net-(S1-Pad7)" "Net-(S1-Pad15)" "Net-(U1-Pad3)" "Net-(U2-Pad3)" "Net-(U2-Pad5)" "Net-(U3-Pad2)" "Net-(U3-Pad3)"
+    "Net-(U3-Pad4)" "Net-(U3-Pad5)" "Net-(U3-Pad6)" "Net-(U3-Pad7)" "Net-(U3-Pad8)" "Net-(U3-Pad9)" "Net-(U3-Pad10)" "Net-(U3-Pad11)"
+    "Net-(U3-Pad12)" "Net-(U3-Pad13)" "Net-(U3-Pad14)" "Net-(U3-Pad15)" "Net-(U3-Pad16)" "Net-(U3-Pad17)" "Net-(U3-Pad18)" "Net-(U3-Pad20)"
+    "Net-(U3-Pad21)" "Net-(U3-Pad22)" "Net-(U3-Pad25)" "Net-(U3-Pad27)" "Net-(U3-Pad28)" "Net-(U3-Pad29)" "Net-(U3-Pad30)" "Net-(U3-Pad31)"
+    "Net-(U3-Pad34)" "Net-(U3-Pad35)" "Net-(U3-Pad37)" "Net-(S1-Pad1)" "Net-(S1-Pad2)" "Net-(J4-Pad1)" "Net-(C1-Pad1)" /bridge
+    "Net-(D3-Pad2)" "Net-(J3-Pad2)"
     (clearance_class señal)
     (via_rule señal)
     (rule
