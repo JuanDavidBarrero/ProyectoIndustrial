@@ -544,4 +544,152 @@ Text Notes 5400 3650 0    98   ~ 20
 ESP32\n
 Text Notes 7500 3650 0    98   ~ 20
 SmithTrigger\n
+$Comp
+L Device:C C1
+U 1 1 607505F1
+P 3000 5950
+F 0 "C1" H 3115 5996 50  0000 L CNN
+F 1 "1000uF" H 3115 5905 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D13.0mm_P5.00mm" H 3038 5800 50  0001 C CNN
+F 3 "~" H 3000 5950 50  0001 C CNN
+	1    3000 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D2
+U 1 1 60751443
+P 2600 5700
+F 0 "D2" H 2600 5483 50  0000 C CNN
+F 1 "D" H 2600 5574 50  0000 C CNN
+F 2 "Diode_THT:D_A-405_P7.62mm_Horizontal" H 2600 5700 50  0001 C CNN
+F 3 "~" H 2600 5700 50  0001 C CNN
+	1    2600 5700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Regulator_Linear:LM7805_TO220 U4
+U 1 1 60751E4D
+P 3650 5700
+F 0 "U4" H 3650 5942 50  0000 C CNN
+F 1 "LM7805_TO220" H 3650 5851 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 3650 5925 50  0001 C CIN
+F 3 "https://www.onsemi.cn/PowerSolutions/document/MC7800-D.PDF" H 3650 5650 50  0001 C CNN
+	1    3650 5700
+	1    0    0    -1  
+$EndComp
+Text Label 3550 4250 3    50   ~ 0
+bridge
+Text Label 2450 5700 2    50   ~ 0
+bridge
+Wire Wire Line
+	2750 5700 3000 5700
+Wire Wire Line
+	3000 5700 3000 5800
+Wire Wire Line
+	3350 5700 3000 5700
+Connection ~ 3000 5700
+Text Label 4450 5700 0    50   ~ 0
+5v
+$Comp
+L Device:R R7
+U 1 1 6075761B
+P 4100 6000
+F 0 "R7" V 3900 6000 50  0000 C CNN
+F 1 "440" V 4000 6000 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P5.08mm_Vertical" V 4030 6000 50  0001 C CNN
+F 3 "~" H 4100 6000 50  0001 C CNN
+	1    4100 6000
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 607581EB
+P 4100 6450
+F 0 "D3" V 4139 6332 50  0000 R CNN
+F 1 "LED" V 4048 6332 50  0000 R CNN
+F 2 "LED_THT:LED_D4.0mm" H 4100 6450 50  0001 C CNN
+F 3 "~" H 4100 6450 50  0001 C CNN
+	1    4100 6450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3950 5700 4100 5700
+Wire Wire Line
+	4100 5850 4100 5700
+Connection ~ 4100 5700
+Wire Wire Line
+	4100 6150 4100 6300
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 6075E349
+P 4450 5900
+F 0 "J3" V 4322 5980 50  0000 L CNN
+F 1 "Conn_01x02" V 4413 5980 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4450 5900 50  0001 C CNN
+F 3 "~" H 4450 5900 50  0001 C CNN
+	1    4450 5900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4100 5700 4350 5700
+$Comp
+L power:GND #PWR0103
+U 1 1 6076295C
+P 3000 6700
+F 0 "#PWR0103" H 3000 6450 50  0001 C CNN
+F 1 "GND" H 3005 6527 50  0000 C CNN
+F 2 "" H 3000 6700 50  0001 C CNN
+F 3 "" H 3000 6700 50  0001 C CNN
+	1    3000 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 60762E59
+P 3650 6700
+F 0 "#PWR0104" H 3650 6450 50  0001 C CNN
+F 1 "GND" H 3655 6527 50  0000 C CNN
+F 2 "" H 3650 6700 50  0001 C CNN
+F 3 "" H 3650 6700 50  0001 C CNN
+	1    3650 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 607630CD
+P 4100 6700
+F 0 "#PWR0105" H 4100 6450 50  0001 C CNN
+F 1 "GND" H 4105 6527 50  0000 C CNN
+F 2 "" H 4100 6700 50  0001 C CNN
+F 3 "" H 4100 6700 50  0001 C CNN
+	1    4100 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 6100 3000 6700
+Wire Wire Line
+	3650 6000 3650 6700
+Wire Wire Line
+	4100 6600 4100 6700
+Wire Notes Line
+	5300 5400 5300 6950
+Wire Notes Line
+	5300 6950 1950 6950
+Wire Notes Line
+	1950 6950 1950 5400
+Wire Notes Line
+	1950 5400 5300 5400
+Text Notes 1950 5350 0    98   ~ 20
+Rectificador AC-DC\n
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 607743FC
+P 3000 5700
+F 0 "#FLG0103" H 3000 5775 50  0001 C CNN
+F 1 "PWR_FLAG" H 3000 5873 50  0000 C CNN
+F 2 "" H 3000 5700 50  0001 C CNN
+F 3 "~" H 3000 5700 50  0001 C CNN
+	1    3000 5700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
